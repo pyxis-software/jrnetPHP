@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    border: 0;
+}
+html, body{
+    width: 100%;
+    height: 90%;
+    background-color: #293FFF;
+}
+/*Configurações padrões*/
+.waves-effect{
+    background-color: #F72A10 !important;
+}
+
+
+#barraTopo{
+    background-color: #F72A10;
+}
+.brand-logo{
+    font-size: 20px !important;
+}
+#telaUser{
+    background-color: #FFF !important;
+}
+#telaUser span{
+    color: #293FFF !important;
+}
+.sidenav{
+    overflow: auto;
+}
+.sidenav i{
+    color: #293FFF !important;
+}
+
+/*PLANOS*/
+.card-content strong{
+    font-size: 22px;
+    color: #F72A10;
+    margin-top: 20px !important;
+}
+.card #card_plano{
+    min-height: 200px !important;
+    max-height: 200px !important;
+}
+@media only screen and (min-width: 720px) {
+    /* For mobile phones: */
+    #card_plano{
+        width: 30%;
+        display: inline-table;
+        
+    }
+}
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #card_plano{
+        width: 100%;
+        display: inline-table;
+        min-height: 200px !important;
+        max-height: 200px !important;
+    }
+}
+
+/*CHAT*/
+#telaUsuarios{
+    height: 100%;
+    overflow: auto;
+}
+#containerChat{
+    position: relative;
+    min-height: 100%;
+    margin: 1%;
+    margin-top: 1%;
+}
+#telaConversa{
+    position: relative;
+    height: 85vh !important;
+    background-color: #FFF;
+}
+#barraMensagens{
+    padding: 1%;
+    color: #FFF;
+}
+#nomeCliente{
+    font-size: 25px;
+    margin-top: 3%;
+}
+#telaMensagens{
+    height: 65vh;
+    overflow: auto;
+}
+.separate{
+    width: 100%;
+    border: 1px solid #293FFF;
+    margin-bottom: 2px;
+}
+#scroller * {
+  overflow-anchor: none;
+}
+#messages{
+    max-height: 75%;
+    overflow: auto;
+}
+#mensagem{
+    width: 100%;
+    padding: 1%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+#contentMessage{
+    min-height: 50px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+.messageR .body{
+    float: right;
+    padding: 2%;
+    border-radius: 10px;
+    max-width: 60%;
+    min-width: 20%;
+}
+.messageL .body{
+    float: left;
+    padding: 2%;
+    border-radius: 10px;
+    max-width: 60%;
+    min-width: 20%;
+}
+.messageL{
+    float: left;
+    text-align: left;
+    position: relative;
+}
+.messageR{
+    text-align: right;
+    float: right;
+    position: relative;
+}
+.header{
+    margin-bottom: 1%;
+}
+.header p{
+    color: #293FFF;
+    font-size: 18px;
+}
+#telaCampo{
+}
+
+/*PAINEIS*/
+#paineisAdmin .card{
+    min-height: 230px;
+}
+textarea{
+    min-height: 150px;
+}

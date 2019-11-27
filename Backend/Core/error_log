@@ -1,0 +1,292 @@
+[30-Sep-2019 10:30:26 America/Sao_Paulo] PHP Warning:  require_once(../requires.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 6
+[30-Sep-2019 10:30:26 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../requires.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 6
+[30-Sep-2019 10:31:32 America/Sao_Paulo] PHP Warning:  require_once(../Backend/Config/Config.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 5
+[30-Sep-2019 10:31:32 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../Backend/Config/Config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 5
+[30-Sep-2019 10:31:45 America/Sao_Paulo] PHP Warning:  require_once(Backend/Config/Config.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 5
+[30-Sep-2019 10:31:45 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'Backend/Config/Config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 5
+[30-Sep-2019 10:32:19 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 10:33:01 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'Admin' not found in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/login_admin.php on line 9
+[30-Sep-2019 10:33:18 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 10:34:06 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 10:34:51 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 10:34:58 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 10:35:13 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 16
+[30-Sep-2019 11:05:15 America/Sao_Paulo] PHP Warning:  require_once(../Mysql.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/buscaPlano.php on line 5
+[30-Sep-2019 11:05:15 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../Mysql.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/buscaPlano.php on line 5
+[30-Sep-2019 11:06:04 America/Sao_Paulo] PHP Warning:  require(Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/buscaPlano.php on line 5
+[30-Sep-2019 11:06:04 America/Sao_Paulo] PHP Warning:  require(Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/buscaPlano.php on line 5
+[30-Sep-2019 11:06:04 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'Backend/Config/Controller.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/buscaPlano.php on line 5
+[30-Sep-2019 11:06:26 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 20
+[30-Sep-2019 11:06:50 America/Sao_Paulo] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/Controller.php on line 20
+[30-Sep-2019 12:10:24 America/Sao_Paulo] PHP Warning:  require(../Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 12:10:24 America/Sao_Paulo] PHP Warning:  require(../Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 12:10:24 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '../Backend/Config/Controller.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 12:10:46 America/Sao_Paulo] PHP Warning:  require(Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 12:10:46 America/Sao_Paulo] PHP Warning:  require(Backend/Config/Controller.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 12:10:46 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'Backend/Config/Controller.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/addPlano.php on line 2
+[30-Sep-2019 16:08:53 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:10:18 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:13:40 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:14:15 America/Sao_Paulo] PHP Warning:  require_once(../../../vendor/autoload.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 4
+[30-Sep-2019 16:14:15 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../../../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 4
+[30-Sep-2019 16:14:58 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:15:51 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:16:29 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:17:57 America/Sao_Paulo] PHP Warning:  require_once(/home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core../../vendor/autoload.php): failed to open stream: No such file or directory in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 2
+[30-Sep-2019 16:17:57 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '/home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core../../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 2
+[30-Sep-2019 16:18:12 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:18:34 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:20:32 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:32:30 America/Sao_Paulo] PHP Parse error:  Invalid numeric literal in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 35
+[30-Sep-2019 16:33:03 America/Sao_Paulo] PHP Parse error:  Invalid numeric literal in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 40
+[30-Sep-2019 16:36:00 America/Sao_Paulo] PHP Notice:  A non well formed numeric value encountered in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 24
+[30-Sep-2019 16:36:36 America/Sao_Paulo] PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 33
+[30-Sep-2019 16:42:23 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:42:53 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:46:57 America/Sao_Paulo] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 47
+[30-Sep-2019 16:46:58 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:47:54 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 16:50:12 America/Sao_Paulo] {"message":"Invalid user identification number","error":"bad_request","status":400,"cause":[{"code":2067,"description":"Invalid user identification number","data":null}]}
+[30-Sep-2019 17:27:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 72
+[30-Sep-2019 17:30:51 America/Sao_Paulo] PHP Warning:  Illegal string offset 'transaction_details' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:30:51 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:30:51 America/Sao_Paulo] PHP Notice:  Undefined variable: result in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 74
+[30-Sep-2019 17:30:51 America/Sao_Paulo] PHP Notice:  Undefined variable: result in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 77
+[30-Sep-2019 17:31:25 America/Sao_Paulo] PHP Warning:  Illegal string offset 'transaction_details' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 74
+[30-Sep-2019 17:31:25 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 74
+[30-Sep-2019 17:31:25 America/Sao_Paulo] PHP Notice:  Undefined variable: result in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 75
+[30-Sep-2019 17:31:25 America/Sao_Paulo] PHP Notice:  Undefined variable: result in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 78
+[30-Sep-2019 17:32:46 America/Sao_Paulo] PHP Warning:  Illegal string offset 'transaction_details' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:32:46 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:32:46 America/Sao_Paulo] PHP Warning:  Illegal string offset 'transaction_details' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 74
+[30-Sep-2019 17:32:46 America/Sao_Paulo] PHP Warning:  Illegal string offset 'payment_method_reference_id' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 74
+[30-Sep-2019 17:32:46 America/Sao_Paulo] PHP Warning:  Illegal string offset 'status' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 77
+[30-Sep-2019 17:33:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 72
+[30-Sep-2019 17:34:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:66
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:35:14 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:66
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:36:31 America/Sao_Paulo] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:37:12 America/Sao_Paulo] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:38:02 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 67
+[30-Sep-2019 17:38:02 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 67
+[30-Sep-2019 17:38:02 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 67
+[30-Sep-2019 17:39:33 America/Sao_Paulo] PHP Notice:  Undefined index: external_resource_url in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:40:40 America/Sao_Paulo] PHP Warning:  Illegal string offset 'external_resource_url' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:41:32 America/Sao_Paulo] PHP Warning:  Illegal string offset 'captured' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:42:08 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[30-Sep-2019 17:42:08 America/Sao_Paulo] PHP Warning:  Illegal string offset 'status' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:43:13 America/Sao_Paulo] PHP Warning:  Illegal string offset 'status' in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:44:45 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[30-Sep-2019 17:44:45 America/Sao_Paulo] PHP Notice:  Undefined index: payment_method_reference_id in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:45:02 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[30-Sep-2019 17:45:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 72
+[30-Sep-2019 17:47:30 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type MercadoPago\Payment as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:66
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:47:56 America/Sao_Paulo] PHP Notice:  Undefined index: response in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 66
+[30-Sep-2019 17:47:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:48:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:49:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 72
+[30-Sep-2019 17:49:59 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:50:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 73
+[30-Sep-2019 17:57:21 America/Sao_Paulo] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 17:57:42 America/Sao_Paulo] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 65
+[30-Sep-2019 21:16:02 America/Sao_Paulo] PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php on line 50
+[01-Oct-2019 15:04:32 America/Sao_Paulo] {"message":"expired_token","cause":[],"error":"not_found","status":401}
+[01-Oct-2019 15:05:06 America/Sao_Paulo] {"message":"expired_token","cause":[],"error":"not_found","status":401}
+[01-Oct-2019 15:05:55 America/Sao_Paulo] {"message":"expired_token","cause":[],"error":"not_found","status":401}
+[01-Oct-2019 15:06:55 America/Sao_Paulo] {"message":"expired_token","cause":[],"error":"not_found","status":401}
+[01-Oct-2019 15:22:10 America/Sao_Paulo] PHP Notice:  Trying to get property 'error' of non-object in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 26
+[01-Oct-2019 15:22:43 America/Sao_Paulo] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, bool given in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 26
+[01-Oct-2019 15:23:08 America/Sao_Paulo] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 26
+[01-Oct-2019 15:25:53 America/Sao_Paulo] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 26
+[01-Oct-2019 17:41:11 America/Sao_Paulo] {"message":"Invalid expiration date","error":"bad_request","status":400,"cause":[{"code":7523,"description":"Invalid expiration date","data":null}]}
+[01-Oct-2019 17:41:48 America/Sao_Paulo] {"message":"Invalid expiration date","error":"bad_request","status":400,"cause":[{"code":7523,"description":"Invalid expiration date","data":null}]}
+[02-Oct-2019 12:58:35 America/Sao_Paulo] {"message":"Invalid transaction_amount","error":"bad_request","status":400,"cause":[{"code":4037,"description":"Invalid transaction_amount","data":null}]}
+[02-Oct-2019 12:59:18 America/Sao_Paulo] {"message":"Invalid transaction_amount","error":"bad_request","status":400,"cause":[{"code":4037,"description":"Invalid transaction_amount","data":null}]}
+[02-Oct-2019 12:59:45 America/Sao_Paulo] {"message":"Invalid transaction_amount","error":"bad_request","status":400,"cause":[{"code":4037,"description":"Invalid transaction_amount","data":null}]}
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: id in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 16
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: valor in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 17
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: dia_venc in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 18
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: dias in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 19
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: nome in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 20
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: cpf in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 21
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: cidade in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 22
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: email in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 23
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined index: endereco in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 24
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Notice:  Undefined offset: 1 in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php on line 35
+[05-Oct-2019 00:12:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: Wrong type NULL. It should be float for property transaction_amount in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php:366
+Stack trace:
+#0 /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php(275): MercadoPago\Entity->tryFormat(NULL, 'float', 'transaction_amo...')
+#1 /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php(236): MercadoPago\Entity->_setValue('transaction_amo...', NULL)
+#2 /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/payment.php(43): MercadoPago\Entity->__set('transaction_amo...', NULL)
+#3 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php on line 366
+[09-Oct-2019 14:00:35 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:01:02 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:07:35 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:07:52 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:08:40 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:09:06 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:09:31 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[09-Oct-2019 14:35:18 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 19:34:08 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[15-Oct-2019 19:34:08 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[15-Oct-2019 19:34:08 America/Sao_Paulo] PHP Warning:  file_get_contents(https://api.mercadopago.com/v1/payments/22121581?access_token=TEST-3859115197274286-100215-b089d448887a9894c2ec2738b018c7a3-177075515): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/ApiDAO.php on line 256
+[15-Oct-2019 19:35:28 America/Sao_Paulo] {"message":"The caller is not authorized to access this resource","error":"forbidden","status":403,"cause":[{"code":4,"description":"The caller is not authorized to access this resource","data":null}]}
+[15-Oct-2019 19:35:28 America/Sao_Paulo] PHP Notice:  Array to string conversion in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/MarcaPago.php on line 30
+[15-Oct-2019 19:36:08 America/Sao_Paulo] {"message":"The caller is not authorized to access this resource","error":"forbidden","status":403,"cause":[{"code":4,"description":"The caller is not authorized to access this resource","data":null}]}
+[15-Oct-2019 19:36:58 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 19:36:58 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 19:38:03 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 19:38:03 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 19:38:39 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: Please initialize SDK first in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php:27
+Stack trace:
+#0 /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php(83): MercadoPago\Entity->__construct()
+#1 /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php(57): MercadoPago\Entity::read(Array)
+#2 /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/MarcaPago.php(23): MercadoPago\Entity::find_by_id(22206590)
+#3 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Entity.php on line 27
+[15-Oct-2019 19:39:05 America/Sao_Paulo] {"message":"Params Error: invalid JSON","error":"bad_request","status":400,"cause":[{"code":1,"description":"Params Error","data":null}]}
+[15-Oct-2019 19:39:48 America/Sao_Paulo] {"message":"Params Error: invalid JSON","error":"bad_request","status":400,"cause":[{"code":1,"description":"Params Error","data":null}]}
+[15-Oct-2019 19:45:39 America/Sao_Paulo] {"message":"Params Error: invalid JSON","error":"bad_request","status":400,"cause":[{"code":1,"description":"Params Error","data":null}]}
+[15-Oct-2019 19:47:31 America/Sao_Paulo] {"message":"Params Error: invalid JSON","error":"bad_request","status":400,"cause":[{"code":1,"description":"Params Error","data":null}]}
+[15-Oct-2019 19:48:20 America/Sao_Paulo] {"message":"Params Error: invalid JSON","error":"bad_request","status":400,"cause":[{"code":1,"description":"Params Error","data":null}]}
+[15-Oct-2019 19:50:28 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[15-Oct-2019 19:50:28 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[15-Oct-2019 19:50:32 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[15-Oct-2019 19:50:32 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[15-Oct-2019 19:51:02 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 19:51:15 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 19:51:46 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 19:54:44 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 19:56:05 America/Sao_Paulo] {"message":"internal_error","error":null,"status":500,"cause":[]}
+[15-Oct-2019 20:22:17 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:22:17 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:23:02 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:23:02 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:42:16 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[15-Oct-2019 20:42:16 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[15-Oct-2019 20:58:21 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:58:21 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[15-Oct-2019 20:58:24 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[15-Oct-2019 20:58:24 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[16-Oct-2019 11:18:15 America/Sao_Paulo] {"message":"Invalid expiration date","error":"bad_request","status":400,"cause":[{"code":7523,"description":"Invalid expiration date","data":null}]}
+[16-Oct-2019 11:26:52 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[16-Oct-2019 11:26:52 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[16-Oct-2019 11:29:28 America/Sao_Paulo] {"message":"The caller is not authorized to access this resource","error":"forbidden","status":403,"cause":[{"code":4,"description":"The caller is not authorized to access this resource","data":null}]}
+[16-Oct-2019 11:29:28 America/Sao_Paulo] PHP Notice:  Array to string conversion in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/MarcaPago.php on line 28
+[16-Oct-2019 11:29:53 America/Sao_Paulo] {"message":"The caller is not authorized to access this resource","error":"forbidden","status":403,"cause":[{"code":4,"description":"The caller is not authorized to access this resource","data":null}]}
+[16-Oct-2019 11:30:23 America/Sao_Paulo] {"message":"Payment not found","error":"not_found","status":404,"cause":[{"code":2000,"description":"Payment not found","data":null}]}
+[16-Oct-2019 11:30:23 America/Sao_Paulo] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.</body>
+</html>
+
+[16-Oct-2019 11:30:23 America/Sao_Paulo] PHP Warning:  file_get_contents(https://api.mercadopago.com/v1/payments/22121581?access_token=TEST-3859115197274286-100215-b089d448887a9894c2ec2738b018c7a3-177075515): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/ApiDAO.php on line 256
+[16-Oct-2019 11:31:06 America/Sao_Paulo] {"message":"The caller is not authorized to access this resource","error":"forbidden","status":403,"cause":[{"code":4,"description":"The caller is not authorized to access this resource","data":null}]}
+[16-Oct-2019 11:32:40 America/Sao_Paulo] PHP Notice:  Undefined index: integrator_id in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[16-Oct-2019 11:32:40 America/Sao_Paulo] PHP Notice:  Undefined index: platform_id in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[16-Oct-2019 11:32:40 America/Sao_Paulo] PHP Notice:  Undefined index: corporation_id in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[16-Oct-2019 11:32:40 America/Sao_Paulo] PHP Notice:  Undefined index: marketplace_owner in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[16-Oct-2019 11:32:40 America/Sao_Paulo] PHP Notice:  Undefined index: barcode in /home/padraoto/public_html/jrnet.padraotorrent.com/vendor/mercadopago/dx-php/src/MercadoPago/Manager.php on line 336
+[24-Oct-2019 17:19:52 America/Sao_Paulo] PHP Notice:  Undefined variable: faturaDAO in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php on line 56
+[24-Oct-2019 17:19:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function setCliente() on null in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php on line 56
+[24-Oct-2019 17:20:11 America/Sao_Paulo] PHP Notice:  Undefined variable: faturaDAO in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php on line 56
+[24-Oct-2019 17:20:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function setCliente() on null in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php on line 56
+[24-Oct-2019 17:21:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php:44
+Stack trace:
+#0 /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php(64): FaturaDAO->salvaFatura()
+#1 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 44
+[24-Oct-2019 17:23:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php:44
+Stack trace:
+#0 /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Core/salvaFatura.php(64): FaturaDAO->salvaFatura()
+#1 {main}
+  thrown in /home/padraoto/public_html/jrnet.padraotorrent.com/Backend/Config/DAO/FaturaDAO.php on line 44

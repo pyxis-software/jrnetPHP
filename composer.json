@@ -1,0 +1,15 @@
+{
+    "name": "softwarepyxis/jrnet",
+    "description": "Sistema da empresa juniornet",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pyxis Software",
+            "email": "spftwarepyxis@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mercadopago/dx-php": "dev-master"
+    }
+}
