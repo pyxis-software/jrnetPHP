@@ -25,6 +25,30 @@ INSERT INTO `admin` (`id`, `email`, `senha`) VALUES
 	(1, 'pyxissoftware@outlook.com', '6a529b7ee743ff9b83d41019eee93dd1');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 
+-- Copiando estrutura para tabela padraoto_magento.planos
+CREATE TABLE IF NOT EXISTS `planos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(20) NOT NULL,
+  `descricao` text NOT NULL,
+  `valor` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+
+-- Copiando estrutura para tabela padraoto_magento.settings
+CREATE TABLE IF NOT EXISTS `settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `endereco` text NOT NULL,
+  `telefone` text NOT NULL,
+  `descricao` text NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `tokken_api` text NOT NULL,
+  `dias_venc` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+
+
 -- Copiando estrutura para tabela padraoto_magento.cliente
 CREATE TABLE IF NOT EXISTS `cliente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -94,29 +118,6 @@ CREATE TABLE IF NOT EXISTS `notificacao` (
   KEY `fk_id_cliente_not` (`idCliente`),
   CONSTRAINT `fk_id_cliente_not` FOREIGN KEY (`idCliente`) REFERENCES `cliente` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
-
-
--- Copiando estrutura para tabela padraoto_magento.planos
-CREATE TABLE IF NOT EXISTS `planos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(20) NOT NULL,
-  `descricao` text NOT NULL,
-  `valor` float NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
-
-
--- Copiando estrutura para tabela padraoto_magento.settings
-CREATE TABLE IF NOT EXISTS `settings` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `endereco` text NOT NULL,
-  `telefone` text NOT NULL,
-  `descricao` text NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `tokken_api` text NOT NULL,
-  `dias_venc` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- Copiando dados para a tabela padraoto_magento.settings: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
