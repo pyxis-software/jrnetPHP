@@ -12,6 +12,21 @@ class Functions {
     }
 
     /* PLANOS */
+    
+    
+    public function verificaVencimento(){
+        $mes = time();
+        
+        //Buscando as faturas que se venceram
+        $sql = $this->mysql->select("fatura", "*", "status = 'pending'");
+        while($fatura = mysqli_fetch_array($sql)){
+            $data = new DateTime($fatura['vencimento']);
+            if($data->getTimestamp() < time() ){
+                //atera o status da mesma para pendente
+                @$update = $this->mysql->update("fatura", "status = 'cancelled'", "id = " . $fatura['id']);
+            }
+        }
+    }
 
     public function getPlanos() {
         $sql = $this->mysql->select("planos", "*", "", "valor ASC");
@@ -33,7 +48,9 @@ class Functions {
                     </div>
                     <div class="card-action center-align">
                         <a href="#modalEdit" class="waves-effect waves-light btn modal-trigger" id="btnEditPlano" idplano="<?php echo $plano['id'] ?>" titulo="<?php echo $plano['titulo'] ?>">Editar</a>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modalEx" id="btnExcluPlano" idplano="<?php echo $plano['id'] ?>" title="Exluir" titulo="<?php echo $plano['titulo'] ?>">Excluir</a>
+                        <?php if($plano['id'] != 1){ ?>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modalEx" id="btnExcluPlano" idplano="<?php echo $plano['id'] ?>" title="Exluir" titulo="<?php echo $plano['titulo'] ?>">Excluir</a>                        
+                        <?php } ?>
                     </div>
                 </div>
                 <?php
@@ -42,7 +59,6 @@ class Functions {
             echo 'Nenhum Plano Encontrado!<br />Adicione um NOVO!';
         }
     }
-    
 
     /* CLIENTES */
 
@@ -70,7 +86,7 @@ class Functions {
                 ?>
                 <div class="card blue-grey darken-1" id="card_plano">
                     <div class="card-content white-text">
-                        <span class="card-title"><b><?php echo utf8_decode($cliente['nome']) ?></b></span>
+                        <span class="card-title"><b><?php echo $cliente['nome'] ?></b></span>
                         <br />
                         <p>CPF: <?php echo $cliente['cpf'] ?></p>
                         <br />
@@ -101,7 +117,7 @@ class Functions {
                 ?>
                 <div class="card blue-grey darken-1" id="card_plano">
                     <div class="card-content white-text">
-                        <span class="card-title"><b><?php echo utf8_decode($cliente['nome']) ?></b></span>
+                        <span class="card-title"><b><?php echo $cliente['nome'] ?></b></span>
                         <br />
                         <p>CPF: <?php echo $cliente['cpf'] ?></p>
                         <br />
@@ -118,7 +134,7 @@ class Functions {
             echo 'Nenhum Cliente Encontrado!';
         }
     }
-    
+
     public function mesFatura($time) {
         
     }
@@ -136,7 +152,7 @@ class Functions {
                 . 'Entre no aplicativo e altere sua senha!';
 
 
-        $emailenviar = "softwarepyxis@gmail.com";
+        $emailenviar = "contato@pyxissoftware.com.br";
         $destino = $c->getEmail();
         $assunto = "Recuperar Senha Aplicativo Junior NET";
 
@@ -194,13 +210,44 @@ class Functions {
         }
     }
 
+    /* GERA SENHA ALEATÓRIA */
+
+    function gerar_senha($tamanho, $maiusculas, $minusculas, $numeros, $simbolos) {
+        $ma = "ABCDEFGHIJKLMNOPQRSTUVYXWZ"; // $ma contem as letras maiúsculas
+        $mi = "abcdefghijklmnopqrstuvyxwz"; // $mi contem as letras minusculas
+        $nu = "0123456789"; // $nu contem os números
+        $si = "!@#$%¨&*()_+="; // $si contem os símbolos
+
+        if ($maiusculas) {
+            // se $maiusculas for "true", a variável $ma é embaralhada e adicionada para a variável $senha
+            $senha .= str_shuffle($ma);
+        }
+
+        if ($minusculas) {
+            // se $minusculas for "true", a variável $mi é embaralhada e adicionada para a variável $senha
+            $senha .= str_shuffle($mi);
+        }
+
+        if ($numeros) {
+            // se $numeros for "true", a variável $nu é embaralhada e adicionada para a variável $senha
+            $senha .= str_shuffle($nu);
+        }
+
+        if ($simbolos) {
+            // se $simbolos for "true", a variável $si é embaralhada e adicionada para a variável $senha
+            $senha .= str_shuffle($si);
+        }
+
+        // retorna a senha embaralhada com "str_shuffle" com o tamanho definido pela variável $tamanho
+        return substr(str_shuffle($senha), 0, $tamanho);
+    }
+
     /* MOSTRA AS INFORMAÇÕES */
 
     public function getInfo() {
         $sql = $this->mysql->select("mural", "*", "", "id DESC");
         if (mysqli_num_rows($sql) > 0) {
             while ($info = mysqli_fetch_array($sql)) {
-                
                 ?>
                 <div class="card blue-grey darken-1" style="width: 100%;">
                     <div class="card-content white-text">
@@ -240,7 +287,7 @@ class Functions {
             case 7:
                 return 'Julho';
             case 8:
-                return 'Agost';
+                return 'Agosto';
             case 9:
                 return 'Setembro';
             case 10:
@@ -253,9 +300,9 @@ class Functions {
     }
 
     /* FATURAS */
-    
+
     public function nomeStatus($status) {
-        switch ($status){
+        switch ($status) {
             case 'pending':
                 return "Pendente";
             case 'cancelled':
@@ -273,7 +320,7 @@ class Functions {
             while ($fatura = mysqli_fetch_array($sql)) {
                 //red darken-1
                 ?>
-                <div class="card-panel <?php echo ($fatura['status'] != "pending")? 'teal red darken-1': 'red darken-4'; ?>">
+                <div class="card-panel <?php echo ($fatura['status'] != "pending") ? 'teal red darken-1' : 'red darken-4'; ?>">
                     <div class="card-content white-text">
                         <div class="row center-align">
                             <div class="col s12 m2">
@@ -294,7 +341,7 @@ class Functions {
                                 <br />
                                 Status do pagamento
                                 <br />
-                                <b><?php echo $this->nomeStatus( $fatura['status'] ) ?></b>
+                                <b><?php echo $this->nomeStatus($fatura['status']) ?></b>
                             </div>
                             <div class="col s12 m3">
                                 <br />
@@ -314,8 +361,10 @@ class Functions {
     }
 
     //Mostra o total das faturas pagas no mês
-    public function faturamentoMesPagos() {
-        $mes = date("m");
+    public function faturamentoMesPagos($mes = Null) {
+        if ($mes == Null) {
+            $mes = date("m");
+        }
         $total = 0;
 
         //bucando todos as faturas salvas
@@ -341,8 +390,10 @@ class Functions {
     }
 
     //Mostra o faturamento que ainda será recebido
-    public function faturamentoMesPendente() {
-        $mes = date("m");
+    public function faturamentoMesPendente($mes = NULL) {
+        if ($mes == NULL) {
+            $mes = date("m");
+        }
         $total = 0;
 
         //bucando todos as faturas salvas
@@ -375,6 +426,79 @@ class Functions {
         } else {
             return false;
         }
+    }
+
+    //Lista os meses que tem fatura
+    public function mesesFatura() {
+        $mes = date("m");
+        $inicial = 1;
+        while ($inicial <= intval($mes)) {
+            $sql = $this->mysql->select("fatura");
+            $tem = false;
+            while ($f = mysqli_fetch_array($sql)) {
+                $m = date("m", $f['lancamento']);
+                if ($inicial == $m) {
+                    $tem = true;
+                }
+            }
+            if ($tem) {
+                echo '<option value="' . $inicial . '">' . $this->nomeMes($inicial) . '</option>';
+            }
+            $inicial++;
+        }
+    }
+
+    //Buscando os dados do mês
+    public function dadosMes($mes) {
+        $retorno = array();
+        $retorno['faturamentoRecebido'] = $this->faturamentoMesPagos($mes);
+        $retorno['faturamentoPendente'] = $this->faturamentoMesPendente($mes);
+        $sql = $this->mysql->select("cliente", "*");
+        
+        while($cliente = mysqli_fetch_array($sql)){
+            $c = new Cliente();
+            $c->setCPF($cliente['cpf']);
+            $dao = new ClienteDAO($c);
+            $clie = $dao->povoaClienteCPF();
+            //Verifica se existe fatura do cliente para o mês
+            $sqlFatura = $this->mysql->select("fatura", "*", "idCliente = " . $clie->getId());
+            $mes = date("m");
+            $existe = false;
+            $status = false;
+            $lancamento = '';
+            $valor = 0;
+            while ($faturas = mysqli_fetch_array($sqlFatura)){
+                if( $mes == date("m", $faturas['lancamento'])){
+                    //existe fatura
+                    $existe = true;
+                    if($faturas['status'] == 'approved'){
+                        $status = true;
+                        $valor = $faturas['valor'];
+                        $lancamento = date("d/m/Y", $faturas['lancamento']);
+                    }
+                }
+            }
+            $retorno['clientes'][] = array(
+                'id' => $clie->getId(),
+                'nome' => $clie->getNome(),
+                'cpf' => $clie->getCPF(),
+                'existe' => $existe,
+                'status' => $status,
+                'lancamento' => $lancamento,
+                'valor' => $valor
+            );
+        }
+
+        //buscando a situação dos clientes
+
+
+
+        return $retorno;
+    }
+
+    //Dados do gráfico
+    public function dadosGraficoMes($mes) {
+        
     }
 
 }

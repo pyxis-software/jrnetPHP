@@ -4,9 +4,9 @@ class Mysql{
     private $erro;
     //
     private $host = "localhost";
-    private $user = "padraoto_magento";
-    private $pass = "messo18101995";
-    private $db = "padraoto_magento";
+    private $user = "u708327365_pro_jrnet";
+    private $pass = "pyxissoftware";
+    private $db = "u708327365_jrnet";
     
     function __construct() {
         //$this->connect();

@@ -141,7 +141,7 @@ class PlanosDAO{
     public function getPlanos($idPlano) {
         $sql = $this->mysql->select("planos", "*", "id != $idPlano");
         while($plano = mysqli_fetch_array($sql)){
-            echo '<option value="'.$plano['id'].'">' . $plano['titulo'].'</option>';
+            echo '<option value="'.$plano['id'].'">' . utf8_decode( $plano['titulo'] ).'</option>';
         }
     }
     

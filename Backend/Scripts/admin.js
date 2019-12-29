@@ -33,6 +33,24 @@ $(document).ready(function () {
     if (window.Notification && Notification.permission !== "denied") {
         notifica = true;
     }
+    
+    /*SAIR*/
+    $("#btnSair").on('click', function(){
+        $.ajax({
+            url: processos + 'logout.php',
+            data: {},
+            type: 'POST',
+            dataType: "JSON",
+            success: function(data){
+                if(!data.erro){
+                    location.reload();
+                }
+            },
+            error: function(){
+                
+            }
+        });
+    });
 
 
 
@@ -331,6 +349,7 @@ $(document).ready(function () {
                         id_payment = data.id;
                         bar_code = data.barcode.content;
                         descricao = data.description;
+
                         $.ajax({
                             url: processos + 'salvaFatura.php',
                             data: {id: id, valor: valor, dia_venc: diaVencimento, dias: dias, nome: nomeUser, cpf: cpfUser, email: emailUser, endereco: endUser, cidade: cidadeUser, link: link, id_payment: id_payment, status: status, barcode: bar_code},
@@ -356,6 +375,7 @@ $(document).ready(function () {
                                 M.toast({html: 'Encontramos um problema!Tente novamente.'});
                             }
                         });
+                        
                     } else {
                         M.toast({html: 'O boleto não foi gerado!'});
                     }

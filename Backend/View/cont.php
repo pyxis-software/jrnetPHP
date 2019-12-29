@@ -32,7 +32,7 @@ $CORE->navBar();
                         <span class="card-title">Clientes</span>
                         <b>Total de Clientes: </b><?php $CORE->functions->getTotalClientes(); ?>
                         <br/>
-                        <b>Pagamentos Pendentes:</b> <?php $CORE->functions->clientesInativos() ?>
+                        <b>Clientes Pendentes:</b> <?php $CORE->functions->clientesInativos() ?>
                         <!--Buscando os clientes pendentes de geramento de fatura-->
                         <?php
                         $cliente = new Cliente();

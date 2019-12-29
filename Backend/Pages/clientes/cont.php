@@ -13,9 +13,6 @@ $CORE->navBar();
                 <div class="col s5 m5 valign-wrapper">
                     <h5>Clientes Pendentes</h5>
                 </div>
-                <div class="col s7 m7 right-align mt2">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modalAdd"><i class="material-icons left">add</i>Adicionar</a>
-                </div>
                 
             </div>
             <?php $CORE->functions->getClientesPendentes(); ?>
@@ -72,7 +69,7 @@ $CORE->navBar();
                     
                     <div class="row">
                         <div class="col s6 m6">
-                            <b><?php echo $cliente->getPlano()->getTitulo() ?></b>
+                            <b><?php echo utf8_decode( $cliente->getPlano()->getTitulo()) ?></b>
                         </div>
                         <div class="col s4 m4">
                             <b>R$ <?php echo $cliente->getPlano()->getValor() ?></b>
@@ -138,10 +135,9 @@ $CORE->navBar();
                             <label for="#valorBoleto">Valor Do Plano</label>
                             <input type="number" id="valorBoleto" name="valor" step=".01" class="validate" value="<?php echo $cliente->getPlano()->getValor() ?>" required>
                         </div>
-                        <div class="input-field">
-                            <label>Lançamento da Fatura</label>
-                            <input type="date"  class="datepicker" id="diaVencimento" required>
-                        </div>
+                        
+                        <input type="hidden" value="<?php echo date("Y-m-d") ?>" id="diaVencimento">
+                        
                         <div class="input-field">
                             <label>Dias para Vencimento</label>
                             <input class="validate" type="number" id="diasVencimento" value="<?php echo $settings->getDias_venc() ?>" required>

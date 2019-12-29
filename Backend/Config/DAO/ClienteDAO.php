@@ -46,12 +46,12 @@ class ClienteDAO {
     private function cliente($c){
         $cliente = new Cliente();
         $cliente->setAtivo($c['ativo']);
-        $cliente->setCPF($c['cpf']);
-        $cliente->setCidade($c['cidade']);
-        $cliente->setEmail($c['email']);
-        $cliente->setEndereco($c['endereco']);
+        $cliente->setCPF( $c['cpf'] );
+        $cliente->setCidade( $c['cidade'] );
+        $cliente->setEmail( $c['email'] );
+        $cliente->setEndereco($c['endereco'] );
         $cliente->setId($c['id']);
-        $cliente->setNome($c['nome']);
+        $cliente->setNome( $c['nome'] );
         $plano = new Plano();
         $plano->setId($c['plano']);
         $PlanoDAO = new PlanosDAO();
@@ -164,7 +164,7 @@ class ClienteDAO {
         $sql = $this->mysql->select("telefone", "*", "idCliente = $id");
         $telefones = array();
         while ($telefone = mysqli_fetch_array($sql)) {
-            $telefones[] = $telefone['telefone'];
+            $telefones[] = utf8_decode($telefone['telefone']);
         }
         return $telefones;
     }
@@ -262,6 +262,7 @@ class ClienteDAO {
     public function recuperaSenha(){
         $retorno = array();
         $retorno['erro'] = false;
+        $clienteR;
         //buscando os dados do cliente
         $sql = $this->mysql->select("cliente", "*", "cpf = '".$this->cliente->getCPF()."'");
         if(mysqli_num_rows($sql) > 0){
@@ -272,11 +273,16 @@ class ClienteDAO {
                 $this->cliente->setEmail($cliente['email']);
                 $this->cliente->setNome($cliente['nome']);
                 $this->cliente->setId($cliente['id']);
+                
+                $clienteR[] = array(
+                    'email' => $cliente['email']
+                );
             }
-            
             //regrando uma nova senha
-            $resultado_final = strtolower(substr(bin2hex(random_bytes(4)), 1));
+            $resultado_final = $this->functions->gerar_senha(6, true, false, true, false);
+            
             $this->cliente->setSenha($resultado_final);
+            
             //alterando a senha no banco de dados
             $senha = md5( $resultado_final );
             $sqlBanco = $this->mysql->update("cliente", "senha = '".$senha."'", "id = " . $this->cliente->getId());

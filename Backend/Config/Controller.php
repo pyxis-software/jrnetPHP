@@ -17,6 +17,7 @@ require_once 'DAO/PlanosDAO.php';
 require_once 'DAO/SettingsDAO.php';
 require_once 'DAO/FaturaDAO.php';
 require_once 'DAO/NotificacaoDAO.php';
+require_once 'DAO/FinanceiroDAO.php';
 require_once 'ApiDAO.php';
 
 //funções
@@ -41,6 +42,7 @@ class Controller {
         array_shift($this->url);
         $this->functions = new Functions();
         $this->api = new ApiDAO();
+        $this->functions->verificaVencimento();
     }
 
     //HEADER
@@ -107,7 +109,7 @@ class Controller {
                     <a href="<?php $this->gerLinkPastas() ?>" class="brand-logo center">JRNET</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="javascript:void(0)">Sair</a></li>
+                        <li><a href="javascript:void(0)" id="btnSair">Sair</a></li>
                     </ul>
                 </div>
             </nav>

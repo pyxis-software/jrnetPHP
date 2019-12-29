@@ -9,3 +9,10 @@ RewriteRule . /index.php [L]
   AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:jrnet.pyxissoftware.com.br
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^jrnet.pyxissoftware.com.br$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:jrnet.pyxissoftware.com.br

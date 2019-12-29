@@ -7,6 +7,7 @@ class AdminDAO {
 
     function __construct() {
         $this->mysql = new Mysql();
+        $this->admin = new Admin();
         if (session_status() !== PHP_SESSION_ACTIVE) {
             session_start();
         }
@@ -53,6 +54,39 @@ class AdminDAO {
             $return['erro'] = true;
             $return['msg'] = "Verifique os dados informados!";
         }
+        return $return;
+    }
+    
+    //Verifica existencia de admin
+    public function verificaExist() {
+        $sql = $this->mysql->select("admin", "*", "email = '".$this->admin->getEmail()."' AND senha = '".md5($this->admin->getSenha())."'");
+        if(mysqli_num_rows($sql) > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    //Cadastro
+    public function cadastro() {
+        $return = array();
+        $return['erro'] = false;
+        $return['msg'] = "";
+        
+        if(!$this->verificaExist()){
+        
+            $sql = $this->mysql->insere("admin", "email, senha", "'".$this->admin->getEmail()."', '".md5($this->admin->getSenha())."'");
+            if($sql){
+                $return['msg'] = "Cadastro Realizado Com Sucesso!";
+            }else{
+                $return['msg'] = "Não foi possível realizar o cadastro!";
+                $return['erro'] = true;
+            }
+        }else{
+            $return['msg'] = "Administrador já foi cadastrado!";
+            $return['erro'] = true;
+        }
+        
         return $return;
     }
 
