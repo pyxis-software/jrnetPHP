@@ -56,7 +56,7 @@ MercadoPago\SDK::setAccessToken($set->getToken());
          "street_number" => "100",
          "neighborhood" => "Umas",
          "city" => $cidade,
-         "federal_unit" => $UF
+         "federal_unit" => "PE"
       )
    );
 $payment->save();

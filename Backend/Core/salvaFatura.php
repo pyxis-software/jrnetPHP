@@ -21,7 +21,7 @@ $nomes = explode(" ", $nome);
 $firstName = $nomes[0];
 $barcode = $_POST['barcode'];
 
-$data = date("d/m/Y", strtotime("+ " . $dias." days", strtotime($vencimento)));
+$data = date("Y-m-d H:i:s", strtotime("+ " . $dias." days", strtotime($vencimento)));
 $mes = intval(date("m", strtotime($vencimento)));
 //tratando os dados
 $cpf = str_replace(".", "", $cpf);
@@ -44,7 +44,7 @@ $fatura->setData($mk->getTimestamp());
 $fatura->setLink($link);
 $fatura->setPayment_id($id_payment);
 $fatura->setValor($valor);
-$fatura->setVencimento($data);
+$fatura->setVencimento(strtotime($data));
 $fatura->setStatus($status);
 
 $fatura->setBarcode($barcode);

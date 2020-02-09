@@ -131,13 +131,15 @@ $(document).ready(function () {
                                 $("#telaClientesMes").append('<div class="card-panel red darken-1">'+
                                     '<div class="row">'+
                                         '<div class="col s12 m6">'+
+                                            'Pagamento Pendente<br />'+
                                             '<b>'+cliente.nome + '</b>'+
                                         '</div>'+
                                         '<div class="col s12 m2">'+
-                                            'Nome'+
+                                            'Valor<br />R$ '+
+                                            cliente.valor+
                                         '</div>'+
                                         '<div class="col s12 m4">'+
-                                            'Nome'+
+                                            '<a href="../../clientes/'+cliente.id+'" class="waves-effect waves-light btn">Ver Perfil</a>'+
                                         '</div>'+
                                     '</div>'+
                                 '</div>');
@@ -147,8 +149,11 @@ $(document).ready(function () {
                                         '<div class="col s12 m6">'+
                                             '<b>'+cliente.nome + '</b>'+
                                         '</div>'+
-                                        '<div class="col s12 m4">'+
+                                        '<div class="col s12 m2">'+
                                             '<b>Sem fatura no mês</b>'+
+                                        '</div>'+
+                                        '<div class="col s12 m2">'+
+                                            '<b>Dia de pagamento:<br />'+cliente.dia_pag+'</b>'+
                                         '</div>'+
                                         '<div class="col s12 m2">'+
                                             '<a href="../../clientes/'+cliente.id+'" class="waves-effect waves-light btn">Ver Perfil</a>'+

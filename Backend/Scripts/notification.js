@@ -20,7 +20,7 @@ $(document).ready(function () {
                     body: mensagem
                 });
                 n.onclick = function(){
-                    window.open('https://jrnet.padraotorrent.com/chat', '_self');
+                    window.open('https://jrnet.pyxissoftware.com.br/chat', '_self');
                 };
             });
         }

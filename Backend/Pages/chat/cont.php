@@ -41,7 +41,7 @@ $CORE->navBar();
             <div class="row" id="telaCampo" class="z-depth-2">
                 <div class="col s10">
                     <form method="post"action="" id="formInput">
-                        <input type="text" class="validate" id="campoMensagem" placeholder="Sua mensagem aqui!">
+                        <input type="text" autocomplete="false" class="validate" id="campoMensagem" placeholder="Sua mensagem aqui!">
                     </form>
                 </div>
                 <div class="col s2 center-align">

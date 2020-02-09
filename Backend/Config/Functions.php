@@ -15,13 +15,10 @@ class Functions {
     
     
     public function verificaVencimento(){
-        $mes = time();
-        
         //Buscando as faturas que se venceram
         $sql = $this->mysql->select("fatura", "*", "status = 'pending'");
         while($fatura = mysqli_fetch_array($sql)){
-            $data = new DateTime($fatura['vencimento']);
-            if($data->getTimestamp() < time() ){
+            if($fatura['vencimento'] < time() ){
                 //atera o status da mesma para pendente
                 @$update = $this->mysql->update("fatura", "status = 'cancelled'", "id = " . $fatura['id']);
             }
@@ -329,7 +326,7 @@ class Functions {
                             </div>
                             <div class="col s12 m2">
                                 <br />
-                                Vencimento em<br /><b><?php echo $fatura['vencimento'] ?></b>
+                                Vencimento em<br /><b><?php echo date("d/m/Y", $fatura['vencimento']) ?></b>
                             </div>
                             <div class="col s12 m2 center-align">
                                 <br />
@@ -453,7 +450,7 @@ class Functions {
         $retorno = array();
         $retorno['faturamentoRecebido'] = $this->faturamentoMesPagos($mes);
         $retorno['faturamentoPendente'] = $this->faturamentoMesPendente($mes);
-        $sql = $this->mysql->select("cliente", "*");
+        $sql = $this->mysql->select("cliente", "*", "ativo = 1");
         
         while($cliente = mysqli_fetch_array($sql)){
             $c = new Cliente();
@@ -471,9 +468,9 @@ class Functions {
                 if( $mes == date("m", $faturas['lancamento'])){
                     //existe fatura
                     $existe = true;
+                    $valor = $faturas['valor'];
                     if($faturas['status'] == 'approved'){
                         $status = true;
-                        $valor = $faturas['valor'];
                         $lancamento = date("d/m/Y", $faturas['lancamento']);
                     }
                 }
@@ -484,6 +481,7 @@ class Functions {
                 'cpf' => $clie->getCPF(),
                 'existe' => $existe,
                 'status' => $status,
+                'dia_pag' => $clie->getDiaPagamento(),
                 'lancamento' => $lancamento,
                 'valor' => $valor
             );

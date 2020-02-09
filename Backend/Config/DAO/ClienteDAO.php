@@ -174,8 +174,10 @@ class ClienteDAO {
         $retorno['erro'] = false;
         $retorno['msg'] = "";
 
+        $sqlNoti = $this->mysql->delete("notificacao", "idCliente = " . $this->cliente->getId());
+        $sqlFatura = $this->mysql->delete("fatura", "idCliente = " . $this->cliente->getId());
         $sql = $this->mysql->delete("cliente", "id = " . $this->cliente->getId());
-        if (!$sql) {
+        if (!$sql || !$sqlNoti || !$sqlFatura) {
             $retorno['erro'] = true;
             $retorno['msg'] = "Erro ao excluir cliente!";
         }
@@ -229,7 +231,7 @@ class ClienteDAO {
         $sql = $this->mysql->select("cliente", "*", "cpf = '" . $this->cliente->getCPF() . "' AND senha = '$senha'");
         if(mysqli_num_rows($sql) == 0){
             $retorno['erro'] = true;
-            $retorno['msg'] = "Verifique seus dados!";
+            $retorno['msg'] = "Cliente não Encontrado!\nVerifique seus dados!";
         }else{
             
             while($cliente = mysqli_fetch_array($sql)){
@@ -251,7 +253,7 @@ class ClienteDAO {
                     );
                 }else{
                     $retorno['erro'] = true;
-                    $retorno['msg'] = "Cliente não ativado!\nAguarde o contato do administrador!";
+                    $retorno['msg'] = "Cliente não ativado!\nAguarde o contato de JrNET!";
                 }
             }
         }
@@ -336,6 +338,19 @@ class ClienteDAO {
                 }
             }
         }
+    }
+    
+    /*Desabilita cliente*/
+    public function desabilita() {
+        $result = array();
+        $result['msg'] = "";
+        $result['erro'] = false;
+        $sql = $this->mysql->update('cliente', "ativo = 0", "id = " . $this->cliente->getId());
+        if(!$sql){
+            $result['erro'] = true;
+            $result['msg'] = "Não foi possível desabilitar o cliente!";
+        }
+        return $result;
     }
 
 }

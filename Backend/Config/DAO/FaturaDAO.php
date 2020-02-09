@@ -68,10 +68,11 @@ class FaturaDAO {
         $function = new Functions();
         $sql = $this->mysql->select("fatura", "*", "idCliente = " . $this->cliente->getId(),"lancamento DESC");
         while($fatura = mysqli_fetch_array($sql)){
+            
             $retorno['faturas'][] = array(
                 'id' => $fatura['id'],
                 'status' => $function->nomeStatus( $fatura['status'] ),
-                'vencimento' => $fatura['vencimento'],
+                'vencimento' => date("d/m/Y", $fatura['vencimento']),
                 'valor' => $fatura['valor'],
                 'link' => $fatura['link'],
                 'barcode' => $fatura['barcode'],

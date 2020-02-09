@@ -349,7 +349,7 @@ $(document).ready(function () {
                         id_payment = data.id;
                         bar_code = data.barcode.content;
                         descricao = data.description;
-
+                        
                         $.ajax({
                             url: processos + 'salvaFatura.php',
                             data: {id: id, valor: valor, dia_venc: diaVencimento, dias: dias, nome: nomeUser, cpf: cpfUser, email: emailUser, endereco: endUser, cidade: cidadeUser, link: link, id_payment: id_payment, status: status, barcode: bar_code},
@@ -429,6 +429,43 @@ $(document).ready(function () {
                 M.toast({html: 'Erro interno do sistema.'});
             }
         });
+    });
+    
+    /*DISATIVAR CLIENTE*/
+    $("#btnDisableCliente").on('click', function(){
+        $("#tipoConfirm").attr("lang", 1);
+        $("#textConfirm").html('');
+        $("#textConfirm").html('Deseja mesmo desabilitar esse cliente!');
+    });
+    $("#BtnRemoveCliente").on('click', function(){
+        $("#tipoConfirm").attr("lang", 2);
+        $("#textConfirm").html('');
+        $("#textConfirm").html('Deseja mesmo EXCLUIR esse cliente!');
+    });
+    $("#btnConfirmaAction").on('click', function(){
+        var id = $("#idClienteConfirm").attr("lang");
+        var tipo = $("#tipoConfirm").attr("lang");
+        console.log("id: " + id +"\n Tipo: " + tipo);
+        if(tipo == 1){
+            $.ajax({
+                url: processos + 'desabilitaCliente.php',
+                data:{id: id},
+                type: "POST",
+                dateType: "JSON",
+                success: function(data){
+                    if(!data.erro){
+                        location.reload();
+                    }else{
+                        M.toast({html: data.msg});
+                    }
+                },
+                error: function(){
+                    M.toast({html: 'Erro interno do sistema.'});
+                }
+            });
+        }else{
+            
+        }
     });
 
     /*Marcar como pago*/
